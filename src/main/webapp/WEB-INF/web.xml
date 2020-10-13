@@ -1,0 +1,39 @@
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" version="2.4">
+
+    <servlet>
+        <servlet-name>First</servlet-name>
+        <servlet-class>servlets.FirstServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>First</servlet-name>
+        <url-pattern>/first</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Jsp</servlet-name>
+        <jsp-file>/pages/page.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Jsp</servlet-name>
+        <url-pattern>/page</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Hello</servlet-name>
+        <jsp-file>/pages/hello.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Hello</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>List</servlet-name>
+        <servlet-class>servlets.ListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>List</servlet-name>
+        <url-pattern>/list</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
